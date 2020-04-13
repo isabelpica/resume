@@ -1,0 +1,199 @@
+/* I seperated your Bar from your logo to make it easier to position.  */
+body {
+    background-color: #dfeaef;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    margin: 0;
+    padding: 25px;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+}
+
+a:visited{
+    color: rgb(62, 62, 62);
+}
+
+a:hover{
+    color: lightsalmon;
+}
+
+a:active{
+    color: orangered;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: circle;
+}
+
+li {
+    color: #8c8e90;
+    font-weight: 500;
+}
+
+h1 {
+    color: #3e3e3e;
+    font-size: 9em;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    color: #668ea5;
+}
+
+h3 {
+    color: #8c8e90;
+}
+
+h4 {
+    font-size: 1.25em;
+    color: #3e3e3e;
+}
+
+p {
+    padding: 0;
+    font-weight: 500;
+}
+
+/* Left-Padding to push over you test by 20px */
+.left-padding {
+    padding-left: 20px;
+}
+
+/* DEFINING THE GRID */
+
+.container {
+    display: grid;
+    /* this will be  the same for everyone */
+    grid-template-columns: 5% 400px 400px  100px 1fr 400px 20%;
+    /* this will be customized, based on your grid, use pixels or % */
+    grid-template-rows: auto 260px auto;
+    /* use letters from step 2 to build the grid */
+    grid-template-areas: 
+        "h h . . . . ."
+        "h h n n . . ."
+        "b b b g . . ."
+        ". e e . . c ."
+        ". a a . . s ."
+        ". w w . . . ."
+        ". r r . . . ."
+        ;
+}
+
+
+/* Defining grid-areas and some styling */
+
+.header {
+    margin-right: 100px;
+    padding-bottom: 20px;
+    grid-area: h;
+}
+
+.bar {
+    grid-area: b;
+}
+
+.name {
+    grid-area: n;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.graphic-design {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 25px;
+    font-size: 2em;
+    grid-area: g;
+}
+
+
+
+.education {
+    padding-top: 20px;
+    grid-area: e;
+}
+
+.about-me {
+    grid-area: a;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.work-experience {
+    grid-area: w;
+}
+
+.references {
+    grid-area: r;
+}
+
+.contact {
+    grid-area: c;
+}
+
+.contact >ul {
+    list-style: none;
+}
+
+.skills {
+    grid-area: s;
+}
+
+.time {
+    padding-left: 15px;
+    font-weight: 300;
+    color: rgb(62, 62, 62);
+}
+/* End of defining grid-areas and some styling */
+
+
+
+/* Media query for when screen is 600px */
+
+/* step three - build a grid that becomes active when the pixels are 800px or less */
+@media only screen and (max-width: 600px) {
+    .container{
+        display: grid;;
+        /* grid is only one column, keep this way */
+        grid-template-columns: 1fr;
+        /* you can enter values, or auto will adjust the box sizes based on content */
+        grid-template-rows: auto;
+        grid-template-areas:
+        /* "q" */
+        "h"
+        "b"
+        "n"
+        "g"
+        "e"
+        "a"
+        "w"
+        "r"
+        "c"
+        "s";
+
+    }
+
+
+    /* Removes the padding from "graphic deisgner" on mobile*/
+    .graphic-design {
+        padding: 0;
+        margin-top: -75px;
+    }
+
+
+    /* Makes your Name smaller once it hits mobile */
+    h1 {
+        font-size: 5em;
+    }
+}
