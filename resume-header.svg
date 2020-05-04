@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 359.8 139.6" style="enable-background:new 0 0 359.8 139.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#95ACBD;}
+	.st1{fill:#CFD1D2;}
+	.st2{fill:#C2DBEA;}
+	.st3{clip-path:url(#SVGID_2_);}
+	.st4{font-family:'Helvetica-Light';}
+	.st5{font-size:103.8783px;}
+	.st6{fill:none;stroke:#C2DBEA;stroke-width:6;stroke-miterlimit:10;}
+</style>
+<rect x="-0.2" y="82.1" class="st0" width="360" height="47.5"/>
+<rect x="79" y="-35.3" class="st1" width="532.8" height="35.3"/>
+<rect x="-0.2" y="727.9" class="st1" width="378.7" height="28.8"/>
+<rect x="123.2" y="45.9" class="st2" width="7.3" height="32.6"/>
+<polygon class="st2" points="95.9,70.4 95.9,70.4 71.3,4.3 60.4,4.3 60.4,79.4 66.8,79.4 66.8,12.5 67.7,12.5 92.3,79.4 98.6,79.4 
+	111.4,45.9 111.4,28.7 "/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-0.2" y="-35.3" width="612" height="792"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st3">
+		<text transform="matrix(1.0064 0 0 1 102.9023 79.2717)" class="st2 st4 st5">P</text>
+	</g>
+</g>
+<polyline class="st6" points="35.2,76.4 76.4,76.4 76.4,7.3 35.2,7.3 "/>
+</svg>
